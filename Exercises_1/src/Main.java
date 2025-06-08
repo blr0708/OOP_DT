@@ -32,9 +32,9 @@ public class Main
 
         // Tworzenie tablicy segmentów
         Segment[] segments = {
-                new Segment(p1, p2), // Отрезок 1
-                new Segment(p2, p3), // Отрезок 2
-                new Segment(p3, p4)  // Отрезок 3
+                new Segment(p1, p2), // Odcinek  1
+                new Segment(p2, p3), // Odcinek  2
+                new Segment(p3, p4)  // Odcinek  3
         };
         // Tutaj będziemy szukać najdłuższego segmentu
         
