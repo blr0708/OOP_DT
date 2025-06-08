@@ -2,18 +2,18 @@ public class Segment
 {
     public Point start;
     public Point end;
-    //конструктор
+    //konstruktor
     public Segment(Point start, Point end) {
         this.start = start;
         this.end = end;
     }
-    //Метод length() вычисляет длину отрезка
+    //Metoda length() oblicza długość segmentu
     public double length() {
         double dx = end.x - start.x;
         double dy = end.y - start.y;
         return Math.sqrt(dx * dx + dy * dy);
     }
-    //вывод стринг
+    
     @Override
     public String toString() {
         return "Segment{" +
@@ -22,7 +22,7 @@ public class Segment
                 '}';
     }
 
-    // Теперь метод в классе Segment
+    // Teraz metoda w klasie Segment
     public static Segment findLongestSegment(Segment[] segments) {
         if (segments == null || segments.length == 0) {
             return null;
