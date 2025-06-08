@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("--- Тестирование шагов 10 и 11 с чтением из файлов ---");
+        System.out.println("--- Тестирование шагов 10 и 11 с чтением из файлов ----");
 
         // Определяем пути к файлам
         String candidatesFilePath = "src/kandydaci.txt";
