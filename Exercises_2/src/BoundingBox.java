@@ -1,10 +1,10 @@
 public class BoundingBox {
-    private double x;      // Координата x левого верхнего угла
-    private double y;      // Координата y левого верхнего угла
-    private double width;  // Ширина прямоугольника
-    private double height; // Высота прямоугольника
+    private double x;      // Współrzędna x lewego górnego rogu
+    private double y;      // Współrzędna y lewego górnego rogu
+    private double width;  // Szerokość prostokąta
+    private double height; // Wysokość prostokąta
 
-    // Конструктор для инициализации значений
+    // Konstruktor do inicjalizacji wartości
     public BoundingBox(double x, double y, double width, double height) {
         this.x = x;
         this.y = y;
@@ -12,7 +12,7 @@ public class BoundingBox {
         this.height = height;
     }
 
-    // Геттеры для значений
+    // Gettery dla wartości
     public double getX() {
         return x;
     }
@@ -29,7 +29,7 @@ public class BoundingBox {
         return height;
     }
 
-    // Переопределим метод toString, чтобы красиво выводить информацию
+    // Zastąpmy metodę toString, aby ładnie wyświetlić informacje
     @Override
     public String toString() {
         return "BoundingBox{" +
