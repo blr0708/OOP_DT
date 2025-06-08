@@ -3,7 +3,7 @@ public class Point
     public double x;
     public double y;
 
-    //конструкторы
+    //konstruktory
     public Point(){
         this.x = 0;
         this.y = 0;
@@ -12,7 +12,7 @@ public class Point
         this.x = x;
         this.y = y;
     }
-    //вывод,стринги
+    //string
     @Override
     public String toString() {
         return "Point{" +
@@ -23,7 +23,7 @@ public class Point
     public String toSvg() {
         return "<circle cx='" + x + "' cy='" + y + "' r='5' fill='black' />";
     }
-    //методы
+    //metody
     public void translate(double dx, double dy) {
         this.x += dx;  // x = x + dx
         this.y += dy;  // y = y + dy
