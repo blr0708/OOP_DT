@@ -39,10 +39,10 @@ public class ServerThread implements Runnable {
             while ((line = reader.readLine()) != null) {
                 System.out.println("Odebrano: " + line);
 
-                // 🎯 Преобразуем строку в Dot
+               
                 Dot dot = Dot.fromMessage(line);
 
-                // 🎯 Передаём dot потребителю (например, контроллеру)
+                
                 if (dotConsumer != null) {
                     dotConsumer.accept(dot);
                 }
@@ -52,13 +52,13 @@ public class ServerThread implements Runnable {
         }
     }
     public static void main(String[] args) throws IOException {
-        ServerThread client = new ServerThread();                 // пустой конструктор
-        client.connect("localhost", 5000);                        // подключаемся
+        ServerThread client = new ServerThread();                 
+        client.connect("localhost", 5000);                        
 
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
-            String line = console.readLine();                    // читаем с клавиатуры
-            client.send(line);                                   // отправляем серверу
+            String line = console.readLine();                    
+            client.send(line);                                   
         }
     }
 
